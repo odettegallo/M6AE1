@@ -9,6 +9,7 @@
 
 <script>
 import TablaUsuarios from './components/TablaUsuarios.vue'
+import FilaUsuario from './components/FilaUsuarios.vue'
 
 export default {
   components: {
