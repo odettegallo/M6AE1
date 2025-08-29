@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Usuarios</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div id="app" class="container mt-5">
+    <h2 class="mb-4">Usuarios Registrados</h2>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="usuario in usuarios" :key="usuario.nombre">
+          <td>{{ usuario.nombre }}</td>
+          <td>{{ usuario.apellido }}</td>
+          <td>{{ usuario.fechaNacimiento }}</td>
+          <td>{{ usuario.edad }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        usuarios: [
+          { nombre: 'Ana', apellido: 'Pérez', fechaNacimiento: '1990-05-12', edad: 35 },
+          { nombre: 'Luis', apellido: 'Gómez', fechaNacimiento: '1985-11-23', edad: 39 },
+          { nombre: 'Carla', apellido: 'Ramírez', fechaNacimiento: '2000-01-08', edad: 25 }
+        ]
+      }
+    });
+  </script> -->
+</body>
+</html>
