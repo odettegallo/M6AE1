@@ -1,16 +1,11 @@
-
 <script setup>
+import { ref } from 'vue';
 
-   new Vue({
-      el: '#app',
-      data: {
-        usuarios: [
-          { nombre: 'Ana', apellido: 'Pérez', fechaNacimiento: '1990-05-12', edad: 35 },
-          { nombre: 'Luis', apellido: 'Gómez', fechaNacimiento: '1985-11-23', edad: 39 },
-          { nombre: 'Carla', apellido: 'Ramírez', fechaNacimiento: '2000-01-08', edad: 25 }
-        ]
-      }
-    });
+const usuarios = ref([
+  { nombre: 'Ana', apellido: 'Pérez', fechaNacimiento: '1990-05-12', edad: 35 },
+  { nombre: 'Luis', apellido: 'Gómez', fechaNacimiento: '1985-11-23', edad: 39 },
+  { nombre: 'Carla', apellido: 'Ramírez', fechaNacimiento: '2000-01-08', edad: 25 }
+]);
 </script>
 
 <template>
@@ -33,7 +28,4 @@
         </tr>
       </tbody>
     </table>
-
 </template>
-
-
